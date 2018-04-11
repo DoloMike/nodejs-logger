@@ -53,6 +53,8 @@ app.post('/log', (req, res) => {
             appName,
             action,
         });
+        
+        res.send('created log!')
     } catch (err) {
         return res.status(500).send()
     }
