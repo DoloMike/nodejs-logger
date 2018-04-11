@@ -44,15 +44,18 @@ app.get('/', async (req, res) => {
 
 // POST method route
 // curl -H "Content-Type: application/json" -X POST -d '{"appName":"app2","action":"read from msp"}' http://localhost:3000/log/
-app.post('/log', function (req, res) {
-    res.send('POST request to the homepage')
+app.post('/log', (req, res) => {
     const appName = req.body.appName
     const action = req.body.action
     
-    Log.create({
-        appName,
-        action,
-    });
+    try {
+        Log.create({
+            appName,
+            action,
+        });
+    } catch (err) {
+        return res.status(500).send()
+    }
 })
 
 // start app
