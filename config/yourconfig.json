@@ -1,0 +1,14 @@
+{
+    "db": {
+        "name": "",
+        "userName": "",
+        "password": "",
+        "options": {
+            "host": "",
+            "dialect": "",
+            "dialectOptions": {
+                "encrypt": true
+            }
+        }
+    }
+}

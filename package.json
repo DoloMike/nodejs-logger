@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-logger",
+  "version": "1.0.0",
+  "description": "receives post request and logs to db",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "author": "Michael Roberts",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "config": "^1.30.0",
+    "express": "^4.16.3",
+    "sequelize": "^4.37.6",
+    "tedious": "^2.3.1"
+  }
+}
